@@ -14,7 +14,7 @@ const defaultCustomers = [
     updated_at: new Date()
 }];
 
-let customers = JSON.parse(localStorage.getItem("customers")) || defaultCustomers;
+let customers = JSON.parse(sessionStorage.getItem("customers")) || defaultCustomers;
 
 //Get all important elements
 const pipeline = document.getElementById("pipeline");
@@ -110,7 +110,7 @@ form.addEventListener("submit", function(e) {
     };
 
     customers.push(newCustomer);
-    localStorage.setItem("customers", JSON.stringify(customers));
+    sessionStorage.setItem("customers", JSON.stringify(customers));
     renderPipeline();
     form.reset();
 });
@@ -122,7 +122,7 @@ function changeStage(id, newStage){
     if (!c) return;
     c.stage = newStage;
     c.updated_at = new Date().toLocaleDateString();
-    localStorage.setItem("customers", JSON.stringify(customers));
+    sessionStorage.setItem("customers", JSON.stringify(customers));
     renderPipeline();
 }
 window.updateCustomerStage = changeStage;
