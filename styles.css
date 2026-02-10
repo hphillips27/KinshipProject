@@ -1,0 +1,99 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    min-height: 125vh;
+}
+
+.crm-main{
+    margin-top: 6rem;
+}
+
+/* Header Styling */
+.header-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.crm-title {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.search-input {
+    max-width: 400px;
+}
+
+.crm-header {
+    background: linear-gradient(to bottom, #e3e3e3, #f7f7f7);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    height: 90px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: all .5s ease;
+    transform-origin: top center;
+    left: 0;
+    transform: none;
+}
+
+.crm-header.shrink {
+    margin: 0.5rem 0;
+    width: calc(100% - 5rem);
+    background: rgba(181, 181, 181, 0.6);
+    border-radius: 1rem;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    left: 2.5rem;
+}
+
+.header-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Stage columns */
+#pipeline .col .card {
+    min-height: 200px;
+    border-radius: 0.5rem;
+}
+
+/* Stage headers */
+#pipeline .card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Customer cards */
+#pipeline .card-body .card {
+    transition: transform 0.1s, box-shadow 0.1s;
+}
+
+#pipeline .card-body .card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+    .header-container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 768px) {
+    #pipeline .col {
+        margin-bottom: 1rem;
+    }
+}
