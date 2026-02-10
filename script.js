@@ -3,7 +3,7 @@ const stages = ["Lead", "Contacted", "Qualified", "Trial/Demo", "Closed"];
 
 
 // Sample Data
-let customers = [
+const defaultCustomers = [
     { 
     id: 1, 
     name: "John Doe", 
@@ -13,6 +13,8 @@ let customers = [
     created_at: new Date(),
     updated_at: new Date()
 }];
+
+let customers = JSON.parse(localStorage.getItem("customers")) || defaultCustomers;
 
 
 //Get all important elements
