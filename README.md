@@ -18,7 +18,7 @@ I chose the frontend track as it tailored to my current strengths and interest i
 - Move customers between stages using dropdown menu
 - Live search feature to filter out customers by name, email, or company
 - Timestamps for customer creation as well as last update
-- Data deployed using browser localStorage
+- Data deployed using browser sessionStorage
 
 
 ## Tech
@@ -38,7 +38,7 @@ https://hphillips27.github.io/KinshipProject/
 
 Vanilla JS: I chose Vanilla JavaScript over React or another framework because I am just more comfortable with it and for the purposes of the project, I wanted to prioritize clean, unerstandable code, completed within the time limit.
 
-LocalStorage: Instead of building a backend and choosing the full stack path as I wanted to really focus my efforts and ensure that I had a manageable vision for this project. This allowed me to focus on a smaller scope and ensuring full funcitonality. Data Persists between page refreshes and no setup or server is required.
+sessionStorage: Instead of building a backend and choosing the full stack path as I wanted to really focus my efforts and ensure that I had a manageable vision for this project. This allowed me to focus on a smaller scope and ensuring full funcitonality. Data Persists between page refreshes and no setup or server is required. I originally chose localStorage, but switched to session so that the site could be deployed on Github Pages.
 
 Kanban Layout: I chose to represent this pipeline as columns, one per stage, with cards to represent each customer in the given stage. THis clearly reflects progress through the sales process and is a standard design choice in professional settings.
 
