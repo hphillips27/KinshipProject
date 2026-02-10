@@ -50,6 +50,7 @@ Kanban Layout: I chose to represent this pipeline as columns, one per stage, wit
 3. Include seperate stages for customers that are closed and won/lost which gives the customer card a slight green or red tint respectively.
 4. Improve scaling of features for mobile use.
 5. Implement a log that tracks stage history.
+6. Add Remove Customer Button
 
 
 
